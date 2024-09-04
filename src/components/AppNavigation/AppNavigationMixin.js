@@ -28,9 +28,15 @@ const AppNavigationMixin = {
     return {
       navigationItems: [
         {
+          id: 'dashboard',
+          label: this.$t('appNavigation.dashboard'),
+          icon: 'iconOverview',
+          route: '/',
+        },
+        {
           id: 'overview',
           label: this.$t('appNavigation.overview'),
-          route: '/',
+          route: '/overview',
           icon: 'iconOverview',
         },
         {

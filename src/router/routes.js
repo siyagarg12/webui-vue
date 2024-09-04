@@ -31,6 +31,7 @@ import VirtualMedia from '@/views/Operations/VirtualMedia';
 import Power from '@/views/ResourceManagement/Power';
 import SnmpAlerts from '@/views/Settings/SnmpAlerts';
 import i18n from '@/i18n';
+import Dashboard from '@/views/Dashboard';
 
 const roles = {
   administrator: 'Administrator',
@@ -97,6 +98,14 @@ const routes = [
     children: [
       {
         path: '',
+        name: 'dashboard',
+        component: Dashboard,
+        meta: {
+          title: i18n.t('appPageTitle.dashboard'),
+        },
+      },
+      {
+        path: '/overview',
         name: 'overview',
         component: Overview,
         meta: {

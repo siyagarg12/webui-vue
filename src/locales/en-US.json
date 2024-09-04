@@ -132,7 +132,8 @@
         "virtualMedia": "@:appPageTitle.virtualMedia",
         "snmpAlerts": "@:appPageTitle.snmpAlerts",
         "power": "@:appPageTitle.power",
-        "keyClear": "@:appPageTitle.keyClear"
+        "keyClear": "@:appPageTitle.keyClear",
+        "dashboard":"Dashboard"
     },
     "appPageTitle": {
         "changePassword": "Change password",
@@ -162,7 +163,8 @@
         "certificates": "Certificates",
         "snmpAlerts": "SNMP Alerts",
         "virtualMedia": "Virtual media",
-        "keyClear": "Key clear"
+        "keyClear": "Key clear",
+        "dashboard":"Dashboard"
     },
     "pageChangePassword": {
         "changePassword": "Change password",
@@ -655,7 +657,10 @@
         "systemInformation": "System information",
         "total": "Total",
         "warningEvents": "Warning",
-        "viewMore": "View more"
+        "viewMore": "View more",
+        "security": "Security",
+        "ransomware": "Ransomware",
+        "networkAnamoly": "Network Anamoly"
     },
     "pagePostCodeLogs": {
         "allExportFilePrefix": "All_POST_codes_log_",
