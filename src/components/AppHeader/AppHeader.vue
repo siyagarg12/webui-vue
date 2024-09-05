@@ -37,6 +37,12 @@
           >
             <img
               svg-inline
+              class="cdac-logo"
+              src="@/assets/images/CDAC.svg"
+              :alt="cdacLogo"
+            />
+            <img
+              svg-inline
               class="header-logo"
               src="@/assets/images/logo-header.svg"
               :alt="altLogo"
@@ -51,6 +57,9 @@
         </b-navbar-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto helper-menu">
+          <li class="nav-date">
+            {{ utcDate }}
+          </li>
           <b-nav-item
             to="/logs/event-logs"
             data-test-id="appHeader-container-health"
@@ -139,6 +148,7 @@ export default {
     return {
       isNavigationOpen: false,
       altLogo: process.env.VUE_APP_COMPANY_NAME || 'Built on OpenBMC',
+      utcDate: '',
     };
   },
   computed: {
@@ -214,6 +224,9 @@ export default {
     this.$store.dispatch('authentication/resetStoreState');
     this.getSystemInfo();
     this.getEvents();
+    // Initialize utcDate with the current UTC date
+    const date = new Date();
+    this.utcDate = date.toUTCString();
   },
   mounted() {
     this.$root.$on(
@@ -284,6 +297,10 @@ export default {
 
   .nav-item {
     fill: theme-color('light');
+  }
+
+  .nav-date {
+    color: color('white') !important;
   }
 
   .navbar {
@@ -393,5 +410,10 @@ export default {
       inset 0 0 0 5px color('white');
     outline: 0;
   }
+}
+
+.cdac-logo {
+  height: 100%;
+  padding-right: 10px;
 }
 </style>
