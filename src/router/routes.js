@@ -32,6 +32,8 @@ import Power from '@/views/ResourceManagement/Power';
 import SnmpAlerts from '@/views/Settings/SnmpAlerts';
 import i18n from '@/i18n';
 import Dashboard from '@/views/Dashboard';
+import CdacFeature from '@/views/CdacFeature';
+import CdacFeature2 from '@/views/CdacFeature2';
 
 const roles = {
   administrator: 'Administrator',
@@ -296,6 +298,22 @@ const routes = [
         meta: {
           title: i18n.t('appPageTitle.virtualMedia'),
           exclusiveToRoles: [roles.administrator],
+        },
+      },
+      {
+        path: '/cdac-feature',
+        name: 'cdac-feature',
+        component: CdacFeature,
+        meta: {
+          title: i18n.t('appPageTitle.cdacFeature'),
+        },
+      },
+      {
+        path: '/cdac-feature2',
+        name: 'cdac-feature',
+        component: CdacFeature2,
+        meta: {
+          title: i18n.t('appPageTitle.cdacFeature'),
         },
       },
       {

@@ -133,7 +133,8 @@
         "snmpAlerts": "@:appPageTitle.snmpAlerts",
         "power": "@:appPageTitle.power",
         "keyClear": "@:appPageTitle.keyClear",
-        "dashboard":"Dashboard"
+        "dashboard":"Dashboard",
+        "cdacFeature":"CDAC Feature"
     },
     "appPageTitle": {
         "changePassword": "Change password",
@@ -164,7 +165,8 @@
         "snmpAlerts": "SNMP Alerts",
         "virtualMedia": "Virtual media",
         "keyClear": "Key clear",
-        "dashboard":"Dashboard"
+        "dashboard":"Dashboard",
+        "cdacFeature":"CDAC Feature"
     },
     "pageChangePassword": {
         "changePassword": "Change password",

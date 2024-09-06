@@ -193,6 +193,18 @@ const AppNavigationMixin = {
             },
           ],
         },
+        {
+          id: 'cdac-feature',
+          label: this.$t('appNavigation.cdacFeature'),
+          icon: 'iconOverview',
+          route: '/cdac-feature',
+        },
+        {
+          id: '',
+          label: this.$t('appNavigation.cdacFeature'),
+          icon: 'iconOverview',
+          route: '/cdac-feature2',
+        },
       ],
     };
   },

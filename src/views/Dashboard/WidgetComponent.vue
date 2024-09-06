@@ -17,6 +17,7 @@
         :style="{ stroke: getColor(index) }"
       />
     </svg>
+    <h3>{{ title }}</h3>
   </div>
 </template>
 
@@ -27,6 +28,10 @@ export default {
       type: Array,
       required: true,
       default: () => [75, 50, 25], // Default to 3 circles if not provided
+    },
+    title: {
+      type: String,
+      required: true,
     },
   },
   methods: {

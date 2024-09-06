@@ -17,19 +17,6 @@
           <router-view class="login=form form-background" />
         </div>
       </div>
-      <div class="login-aside">
-        <div class="login-aside__logo-brand">
-          <!-- Add Secondary brand logo if needed -->
-        </div>
-        <div class="login-aside__logo-bmc">
-          <img
-            svg-inline
-            height="60px"
-            src="@/assets/images/built-on-openbmc-logo.svg"
-            alt="Built on OpenBMC"
-          />
-        </div>
-      </div>
     </div>
   </main>
 </template>
@@ -52,7 +39,6 @@ export default {
   display: flex;
   flex-direction: column;
   gap: $spacer * 2;
-  max-width: 1400px;
   min-width: 320px;
   min-height: 100vh;
   justify-content: space-around;

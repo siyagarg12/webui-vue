@@ -5,14 +5,6 @@
         {{ $t('pageLogin.alert.message') }}
       </p>
     </alert>
-    <b-form-group label-for="language" :label="$t('pageLogin.language')">
-      <b-form-select
-        id="language"
-        v-model="$i18n.locale"
-        :options="languages"
-        data-test-id="login-select-language"
-      ></b-form-select>
-    </b-form-group>
     <b-form-group label-for="username" :label="$t('pageLogin.username')">
       <b-form-input
         id="username"
