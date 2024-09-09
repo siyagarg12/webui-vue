@@ -100,13 +100,13 @@ export default {
 }
 .dashboard {
   min-height: 200px;
-  background-color: orange !important;
+  background-color: lightgrey !important;
 }
 .dashboard-server {
-  background-color: yellow !important;
+  background-color: lightgrey !important;
 }
 .dashboard-firmware {
-  background-color: aqua !important;
+  background-color: lightgrey !important;
 }
 .security {
   background-color: black !important;

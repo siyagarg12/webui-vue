@@ -7,7 +7,7 @@
             <img
               svg-inline
               width="90px"
-              src="@/assets/images/login-company-logo.svg"
+              src="@/assets/images/CDAC.svg"
               :alt="altLogo"
             />
           </div>

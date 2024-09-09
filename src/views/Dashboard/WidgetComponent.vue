@@ -1,6 +1,6 @@
 <template>
   <div class="rainbow-widget">
-    <svg viewBox="0 0 36 36" class="circular-chart">
+    <svg viewBox="-2 -2 40 40" class="circular-chart">
       <path
         v-for="(percentage, index) in percentages"
         :key="index"
