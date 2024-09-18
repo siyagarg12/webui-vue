@@ -16,6 +16,17 @@
         :d="getCirclePath(index)"
         :style="{ stroke: getColor(index) }"
       />
+      <text
+        v-if="title === 'CPU usage'"
+        x="18"
+        y="22"
+        class="percentage-text"
+        text-anchor="middle"
+        :fill="getColor(0)"
+        font-size="8"
+      >
+        {{ percentages[0] }}%
+      </text>
     </svg>
     <h3>{{ title }}</h3>
   </div>
@@ -26,8 +37,7 @@ export default {
   props: {
     percentages: {
       type: Array,
-      required: true,
-      default: () => [75, 50, 25], // Default to 3 circles if not provided
+      required: true, // Default to 3 circles if not provided
     },
     title: {
       type: String,

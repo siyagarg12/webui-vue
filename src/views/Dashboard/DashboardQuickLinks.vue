@@ -2,20 +2,40 @@
   <b-card bg-color="orange" border-variant="light">
     <div class="widgets">
       <widget-component
-        :percentages="[75, 50, 25]"
+        :percentages="temperaturePercentages"
         title="Temperature sensors"
       />
-      <widget-component :percentages="[80, 60, 40, 20]" title="CPU sensors" />
-      <widget-component :percentages="[50, 30]" title="Fan sensors" />
+      <widget-component :percentages="cpuPercentages" title="CPU usage" />
+      <widget-component :percentages="fanPercentages" title="Fan speed" />
     </div>
   </b-card>
 </template>
 <script>
 import WidgetComponent from './WidgetComponent.vue';
+import jsonData from '../../../public/data.json';
 export default {
   name: 'DashboardQuickLinks',
   components: {
     WidgetComponent,
+  },
+  data() {
+    return {
+      jsonData,
+    };
+  },
+  computed: {
+    temperaturePercentages() {
+      const temperatures = jsonData.Temperature;
+      return temperatures;
+    },
+    cpuPercentages() {
+      const cpuUsages = jsonData.CPU;
+      return cpuUsages;
+    },
+    fanPercentages() {
+      const fanUsages = jsonData['Fan Usage'];
+      return fanUsages;
+    },
   },
 };
 </script>
